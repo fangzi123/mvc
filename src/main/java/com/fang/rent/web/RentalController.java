@@ -1,4 +1,4 @@
-package com.fang.rent.web;
+/*package com.fang.rent.web;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -19,13 +19,13 @@ import java.util.Arrays;
 @RequestMapping("/fang")
 public class RentalController extends _BaseController {
 
-    /**
+    *//**
      * 处理从user发起的消息
      *
      * @param request
      * @param response
      * @throws IOException
-     */
+     *//*
     @RequestMapping(value = "/entry", produces = "text/html;charset=UTF-8")
     @ResponseBody
     public String dealMessage(HttpServletRequest request) throws IOException {
@@ -90,14 +90,14 @@ public class RentalController extends _BaseController {
         return buffer.toString();
     }
 
-    /**
+    *//**
      * 检查认证(与微信服务器打交道的均要认证)
      *
      * @param signature
      * @param timestamp
      * @param nonce
      * @return
-     */
+     *//*
     private boolean checkSignature(String signature, String timestamp, String nonce) {
         String token = "fangzi";//WetalkConfigManager.getInstance().getProperty("token");
         String[] dataStrings = new String[]{token, timestamp, nonce};
@@ -113,3 +113,4 @@ public class RentalController extends _BaseController {
 
     }
 }
+*/

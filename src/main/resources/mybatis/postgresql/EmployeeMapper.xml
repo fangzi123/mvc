@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fang.rent.dao.UserDao">
+     <sql id="employee_table">
+        accountname,name,branch_company_id,department_id,mobile,email,passwd,last_signin_time,flag,company_id
+     </sql>
+    <update id="updateEmp" parameterType="com.fang.rent.entity.Employee">
+        update employee
+        set 
+        name=#{name}
+        where id=#{id}
+    </update>
+</mapper>
